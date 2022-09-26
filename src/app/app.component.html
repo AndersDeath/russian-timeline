@@ -1,6 +1,11 @@
 <div class="header">
   <div class="logo">RT</div>
+  <div class="lang-selectors">
+    <button pButton type="button" label="ru" class="p-button-text" (click)="setLang('ru')"></button>
+    <button pButton type="button" label="en" class="p-button-text" (click)="setLang('en')"></button>
+  </div>
 </div>
+{{ 'test' | translate}}
 <p-timeline [value]="events" align="alternate">
   <ng-template pTemplate="marker" let-event>
       <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
