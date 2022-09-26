@@ -1,3 +1,5 @@
+import { EN_TRANSLATION } from './i18n/en';
+import { RU_TRANSLATION } from './i18n/ru';
 import {Component,OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import {PrimeIcons} from 'primeng/api';
@@ -24,7 +26,9 @@ export class AppComponent implements OnInit{
   constructor(
     public translate: TranslateService
   ){
-    translate.addLangs(['en', 'de', 'es']);
+    translate.setTranslation('ru', RU_TRANSLATION);
+    translate.setTranslation('en', EN_TRANSLATION);
+    translate.addLangs(['en', 'ru']);
     translate.setDefaultLang(this.currentLang);
     translate.use(this.currentLang);
   }

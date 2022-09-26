@@ -1,4 +1,4 @@
-{
+export const EN_TRANSLATION = {
   "events": {
     "item-2":{
       "title" : "Assassination of Boris Nemtsov",

@@ -1,4 +1,4 @@
-{
+export const RU_TRANSLATION = {
   "events": {
     "item-2":{
       "title" : "Убийство Бориса Немцова",
