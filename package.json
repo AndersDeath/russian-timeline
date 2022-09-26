@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "gh-prepare": "npm run config -- --environment=prod && ng build --configuration production --base-href https://andersdeath.github.io/russian-timeline/",
+    "gh-prepare": "ng build --configuration production --base-href https://andersdeath.github.io/russian-timeline/",
     "gh-deploy": "ngh --dir=dist/russian-timeline/",
     "gh": "npm run gh-prepare && npm run gh-deploy"
   },
