@@ -5,7 +5,6 @@
     <button pButton type="button" label="en" class="p-button-text" (click)="setLang('en')"></button>
   </div>
 </div>
-{{ 'test' | translate}}
 <p-timeline [value]="events" align="alternate">
   <ng-template pTemplate="marker" let-event>
       <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
@@ -13,7 +12,7 @@
       </span>
   </ng-template>
   <ng-template pTemplate="content" let-event>
-      <p-card class="card" [header]="event.status" [subheader]="event.date">
+      <p-card class="card" header="{{event.title | translate}}" subheader="{{event.date | translate}}">
       </p-card>
   </ng-template>
 </p-timeline>

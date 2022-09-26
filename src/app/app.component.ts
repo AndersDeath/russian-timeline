@@ -30,12 +30,18 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit() {
+      const colors = {
+        putin: '#9C27B0',
+        murdering: " #cc0000",
+      }
       this.translate.use('en');
       this.events = [
-          {status: 'Ordered', date: '15/10/2020 10:30', icon: PrimeIcons.SHOPPING_CART, color: '#9C27B0', image: 'game-controller.jpg'},
-          {status: 'Processing', date: '15/10/2020 14:00', icon: PrimeIcons.COG, color: '#673AB7'},
-          {status: 'Shipped', date: '15/10/2020 16:15', icon: PrimeIcons.ENVELOPE, color: '#FF9800'},
-          {status: 'Delivered', date: '16/10/2020 10:00', icon: PrimeIcons.CHECK, color: '#607D8B'}
+        {
+          title: 'events.item-2.title', date:  'events.item-2.date', icon: PrimeIcons.CIRCLE, color: colors.murdering
+        },
+          {
+            title: 'events.item-1.title', date:  'events.item-1.date', icon: PrimeIcons.HOME, color: colors.putin
+          },
       ];
   }
 
