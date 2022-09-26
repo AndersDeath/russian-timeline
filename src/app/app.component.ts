@@ -36,12 +36,16 @@ export class AppComponent implements OnInit{
   ngOnInit() {
       const colors = {
         putin: '#9C27B0',
-        murdering: " #cc0000",
+        murdering: "#cc0000",
+        protests: "#7FA172"
       }
       this.translate.use('en');
       this.events = [
         {
           title: 'events.item-2.title', date:  'events.item-2.date', icon: PrimeIcons.CIRCLE, color: colors.murdering
+        },
+        {
+          title: 'events.item-3.title', date:  'events.item-3.date', icon: PrimeIcons.STAR_FILL, color: colors.protests
         },
           {
             title: 'events.item-1.title', date:  'events.item-1.date', icon: PrimeIcons.HOME, color: colors.putin

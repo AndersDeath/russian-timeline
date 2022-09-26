@@ -7,6 +7,10 @@ export const EN_TRANSLATION = {
     "item-1":{
       "title" : "Putin came to power",
       "date": "12/31/1999"
+    },
+    "item-3": {
+      title: "Meeting on Bolotnaya Square",
+      date: "10/12/2011"
     }
   }
 }
