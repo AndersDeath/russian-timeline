@@ -42,6 +42,9 @@ export class AppComponent implements OnInit{
       this.translate.use('en');
       this.events = [
         {
+          title: 'events.item-4.title', date:  'events.item-4.date', icon: PrimeIcons.CIRCLE, color: colors.putin
+        },
+        {
           title: 'events.item-2.title', date:  'events.item-2.date', icon: PrimeIcons.CIRCLE, color: colors.murdering
         },
         {
