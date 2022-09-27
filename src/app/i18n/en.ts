@@ -10,7 +10,11 @@ export const EN_TRANSLATION = {
     },
     "item-3": {
       title: "Meeting on Bolotnaya Square",
-      date: "10/12/2011"
+      date: "12/10/2011"
+    },
+    "item-4": {
+      title: "Amendments to the Russian Constitution",
+      date: "03/04/2020"
     }
   }
 }

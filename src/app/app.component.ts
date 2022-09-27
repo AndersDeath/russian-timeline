@@ -47,9 +47,9 @@ export class AppComponent implements OnInit{
         {
           title: 'events.item-3.title', date:  'events.item-3.date', icon: PrimeIcons.STAR_FILL, color: colors.protests
         },
-          {
-            title: 'events.item-1.title', date:  'events.item-1.date', icon: PrimeIcons.HOME, color: colors.putin
-          },
+        {
+          title: 'events.item-1.title', date:  'events.item-1.date', icon: PrimeIcons.HOME, color: colors.putin
+        },
       ];
   }
 
